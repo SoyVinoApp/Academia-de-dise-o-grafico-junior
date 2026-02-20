@@ -8,10 +8,18 @@
 <style>
 body{
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Segoe UI', sans-serif;
+    background:white;
+    color:#333;
+}
+
+/* ===== HEADER CON COLOR ===== */
+header{
+    text-align:center;
+    padding:60px 20px;
     background: linear-gradient(135deg, #00ff88, #0099ff, #ff0033);
-    background-size: 400% 400%;
-    animation: fondoAnimado 12s ease infinite;
+    background-size: 300% 300%;
+    animation: fondoAnimado 10s ease infinite;
     color:white;
 }
 
@@ -19,11 +27,6 @@ body{
     0%{background-position:0% 50%;}
     50%{background-position:100% 50%;}
     100%{background-position:0% 50%;}
-}
-
-header{
-    text-align:center;
-    padding:50px 20px;
 }
 
 header img{
@@ -34,38 +37,39 @@ header img{
 
 @keyframes flotar{
     0%{transform:translateY(0px);}
-    50%{transform:translateY(-15px);}
+    50%{transform:translateY(-10px);}
     100%{transform:translateY(0px);}
 }
 
 h1{
     font-size:45px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-shadow:2px 2px 10px rgba(0,0,0,0.4);
 }
 
+/* ===== CONTENIDO BLANCO ===== */
 section{
-    padding:40px;
+    padding:50px 20px;
+    max-width:1000px;
+    margin:auto;
 }
 
+/* TARJETAS */
 .card{
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(10px);
+    background:white;
     padding:30px;
     margin:30px 0;
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-    transition:0.4s;
-    border:2px solid rgba(255,255,255,0.3);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
 .card:hover{
-    transform: scale(1.05);
-    background: rgba(255,255,255,0.25);
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
 h2{
-    color:#ffff00;
-    font-size:28px;
+    color:#0099ff;
 }
 
 ul{
@@ -73,19 +77,20 @@ ul{
 }
 
 a{
-    color:#00ffff;
+    color:#ff0033;
     font-weight:bold;
     text-decoration:none;
 }
 
 a:hover{
-    color:#ffcc00;
+    color:#0099ff;
 }
 
 footer{
     text-align:center;
     padding:25px;
-    background:rgba(0,0,0,0.6);
+    background:#111;
+    color:white;
 }
 </style>
 </head>
