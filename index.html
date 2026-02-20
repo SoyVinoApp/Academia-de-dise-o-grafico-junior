@@ -15,20 +15,18 @@
         }
 
         body {
-            background-color: #f9f4ef; /* fondo cálido claro, extraído del logo */
+            background-color: #f9f4ef;
         }
 
-        /* paleta basada en el logo anexado (colores principales) */
         :root {
-            --verde-menta: #9fd9c4;      /* fondo claro del logo */
-            --verde-oscuro: #2f5e4e;     /* letras / trazos fuertes */
-            --terracota: #e27d5e;        /* acento cálido */
-            --crema: #f4e5d5;            /* fondo suave */
-            --gris-azulado: #3a5a6c;      /* para detalles */
+            --verde-menta: #9fd9c4;
+            --verde-oscuro: #2f5e4e;
+            --terracota: #e27d5e;
+            --crema: #f4e5d5;
+            --gris-azulado: #3a5a6c;
             --blanco: #ffffff;
         }
 
-        /* header con el logo y título */
         header {
             background: linear-gradient(135deg, var(--verde-oscuro) 0%, #1f4037 100%);
             padding: 1.5rem 2rem;
@@ -58,7 +56,6 @@
             border: 3px solid var(--terracota);
         }
 
-        /* logo en código (recreación del anexo) */
         .custom-logo {
             width: 70px;
             height: 70px;
@@ -94,7 +91,6 @@
             font-family: 'Arial Black', sans-serif;
         }
 
-        /* texto del header */
         .titulo-principal {
             color: white;
             font-size: 2.4rem;
@@ -113,7 +109,6 @@
             letter-spacing: 2px;
         }
 
-        /* botones flotantes decorativos */
         .header-decor {
             display: flex;
             gap: 15px;
@@ -128,14 +123,12 @@
             border: 2px dashed white;
         }
 
-        /* main container */
         .container {
             max-width: 1300px;
             margin: 0 auto;
             padding: 30px 25px;
         }
 
-        /* introducción */
         .intro-card {
             background: var(--blanco);
             border-radius: 40px 20px 40px 20px;
@@ -161,7 +154,6 @@
             font-weight: 700;
         }
 
-        /* grid secciones */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -225,7 +217,6 @@
             opacity: 0.9;
         }
 
-        /* ramas con estilo más visual */
         .ramas-grid {
             display: flex;
             flex-direction: column;
@@ -250,7 +241,6 @@
             font-size: 1.5rem;
         }
 
-        /* herramientas badges */
         .herramientas {
             display: flex;
             flex-wrap: wrap;
@@ -276,7 +266,6 @@
             color: var(--verde-menta);
         }
 
-        /* sección universidades especial */
         .uni-section {
             background: linear-gradient(145deg, var(--crema), #fffcf8);
             border-radius: 50px 20px 50px 20px;
@@ -294,17 +283,15 @@
             align-items: center;
             gap: 15px;
             text-transform: uppercase;
-            /* solución para móvil: permitir que el texto se ajuste y no se desborde */
             flex-wrap: wrap;
             word-break: break-word;
             hyphens: auto;
         }
 
-        /* ajuste fino para pantallas pequeñas */
         @media (max-width: 600px) {
             .uni-section h2 {
-                font-size: 2.2rem;        /* un poco más pequeño */
-                justify-content: center;   /* centrado en móvil */
+                font-size: 2.2rem;
+                justify-content: center;
                 text-align: center;
                 gap: 8px;
             }
@@ -355,7 +342,6 @@
             color: #0f2c24;
         }
 
-        /* por qué importante destacado */
         .importante-box {
             background: var(--verde-oscuro);
             color: white;
@@ -388,7 +374,6 @@
             color: var(--terracota);
         }
 
-        /* responsive */
         @media (max-width: 700px) {
             .titulo-principal {
                 font-size: 1.8rem;
@@ -405,7 +390,6 @@
         <div class="logo-container">
             <div class="logo-svg">
                 <div class="custom-logo"></div> 
-                <!-- representación simbólica del logo anexado -->
             </div>
             <h1 class="titulo-principal">
                 Academia de Diseño Gráfico Junior
@@ -420,15 +404,12 @@
     </header>
 
     <div class="container">
-        <!-- introducción estilo cita -->
         <div class="intro-card">
             <i class="fas fa-paint-brush"></i> 
             <p><strong>El diseño gráfico</strong> es el arte y la ciencia de la comunicación visual. Se trata de resolver problemas y transmitir mensajes específicos utilizando imágenes, símbolos y texto.</p>
         </div>
 
-        <!-- grid principal de 3 secciones (pilares, ramas, herramientas) -->
         <div class="grid">
-            <!-- Pilares -->
             <div class="card">
                 <h2><i class="fas fa-cubes"></i> 1. Pilares</h2>
                 <p style="font-weight: 600; margin-bottom: 15px;">Para que un diseño funcione (y no sea solo un dibujo), se basa en fundamentos técnicos que guían el ojo del espectador:</p>
@@ -442,7 +423,6 @@
                 <div style="background: var(--verde-menta); height: 6px; width: 80%; margin-top: 20px; border-radius: 10px;"></div>
             </div>
 
-            <!-- Ramificaciones con diseño especial -->
             <div class="card">
                 <h2><i class="fas fa-sitemap"></i> 2. Ramificaciones</h2>
                 <div class="ramas-grid">
@@ -455,7 +435,6 @@
                 <p style="margin-top: 20px; font-style: italic;">Cada rama exige un enfoque único, pero todas comparten los mismos pilares.</p>
             </div>
 
-            <!-- Herramientas -->
             <div class="card">
                 <h2><i class="fas fa-tools"></i> 3. Herramientas</h2>
                 <p>Normalmente se usan herramientas como:</p>
@@ -469,14 +448,12 @@
             </div>
         </div>
 
-        <!-- ¿Por qué importante? (punto 4) en tarjeta ancha -->
         <div class="importante-box">
             <i class="fas fa-star"></i>
             <h2 style="color:white; border-bottom: 3px solid var(--verde-menta); display: inline-block; padding-bottom: 5px;">4. ¿Por qué es importante?</h2>
             <p style="margin-top: 20px;">En un mundo saturado de información, un buen diseño hace que una empresa parezca profesional, que una instrucción sea fácil de seguir o que una causa social gane visibilidad. <strong>De allí la importancia del diseño gráfico.</strong></p>
         </div>
 
-        <!-- punto 5: Universidades (con enlaces) - Título corregido para móvil -->
         <div class="uni-section">
             <h2><i class="fas fa-university" style="color: var(--terracota);"></i> 5. Universidades que ofrecen diseño gráfico</h2>
             <div class="uni-cards">
@@ -500,14 +477,14 @@
             <p style="text-align: center; margin-top: 30px; font-size: 1.2rem;"><i class="fas fa-mouse-pointer" style="color: var(--terracota);"></i> Haz clic en cualquier abreviatura para visitar su web oficial.</p>
         </div>
 
-        <!-- pequeña sección extra "etcétera" con estilo -->
+        <!-- Sección "etcétera" con nueva frase relacionada al diseño gráfico -->
         <div style="background: var(--blanco); border-radius: 20px; padding: 20px 30px; display: flex; align-items: center; gap: 15px; border: 3px dotted var(--verde-menta);">
             <i class="fas fa-smile-wink" style="font-size: 3rem; color: var(--terracota);"></i>
-            <span style="font-size: 1.2rem;"><strong>Etcétera:</strong> También hay diseño de señalética, tipográfico, data visualization y más. ¡El límite es la creatividad!</span>
+            <span style="font-size: 1.2rem;"><strong>El diseño está en todas partes:</strong> desde la señalética que nos guía, la tipografía que emociona, hasta la visualización de datos que nos ayuda a comprender el mundo. ¡Un buen diseñador transforma ideas en experiencias!</span>
         </div>
 
         <div class="footer-note">
-            <i class="fas fa-copyright"></i> Academia de Diseño Gráfico Junior — proyecto liceo · todos los colores inspirados en el logo anexado 
+            <i class="fas fa-copyright"></i> Academia de Diseño Gráfico Junior · todos los derechos reservados 
         </div>
     </div>
 </body>
